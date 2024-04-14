@@ -4,10 +4,12 @@ import { decrypt } from "./caesar";
 const sample = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 export interface Question {
+  id: number;
   sequence: number[];
   deviation: number;
   plain: string;
   cipher: string;
+  result?: boolean;
 }
 
 function randLen() {
@@ -38,7 +40,7 @@ function compress(seq: number[]): number {
   return next[0];
 }
 
-export function gen(throwZero: boolean): Question {
+export function gen(throwZero: boolean): Omit<Question, "id"> {
   const seq = [];
   for (let i = 0; i < randLen(); i++) {
     seq.push(randNum(100));

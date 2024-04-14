@@ -5,7 +5,6 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "./components/HomePage.vue";
 import LotteryPage from "./components/LotteryPage.vue";
 import SolvePage from "./components/SolvePage.vue";
-import SolveMedPage from "./components/SolveMedPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -13,7 +12,6 @@ const router = createRouter({
     { path: "/", component: HomePage },
     { path: "/lottery", component: LotteryPage },
     { path: "/solve", component: SolvePage },
-    { path: "/solve-med", component: SolveMedPage },
   ]
 });
 

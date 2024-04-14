@@ -10,8 +10,7 @@
         </div>
         <div class="flex">
           <RouterLink to="/lottery"><button>抽奖</button></RouterLink>
-          <RouterLink to="/solve-med"><button>中难度组</button></RouterLink>
-          <RouterLink to="/solve"><button>高难度组</button></RouterLink>
+          <RouterLink to="/solve"><button>中难度组</button></RouterLink>
         </div>
       </div>
     </div>
